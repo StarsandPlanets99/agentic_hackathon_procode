@@ -22,7 +22,7 @@ Download Here: https://www.python.org/downloads/
 
 ### ✅ Node.js
 Required for Playwright browser automation  
-Download: https://nodejs.org/
+Download Here: https://nodejs.org/
 
 ### ✅ Azure OpenAI API Key
 
