@@ -153,10 +153,12 @@ OPENAI_API_VERSION=2024-12-01-preview
 .env
 ```
 
-### 5. 🚀 Run the Agents
+---
+
+## 🚀 Run the Agents
 
 Create a script called e.g shopping_agents.py and paste the following:
-
+ #### edit this 
 ```python
 #IMPORTS
 import asyncio
@@ -166,6 +168,7 @@ from autogen_agentchat.teams import RoundRobinGroupChat
 from autogen_agentchat.ui import Console
 from autogen_ext.models.openai import OpenAIChatCompletionClient
 from autogen_ext.agents.web_surfer import MultimodalWebSurfer
+```
 
 async def main():
     model_client = OpenAIChatCompletionClient(model="gpt-4o")
@@ -193,3 +196,11 @@ async def main():
         await model_client.close()
 
 asyncio.run(main())
+
+```
+EXTENSION TASKS:
+- explain teams
+- Use different types of teams
+- use assistant agents to create a multi agent system
+- task (add specific items to shopping basket)
+
