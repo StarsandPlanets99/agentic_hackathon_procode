@@ -111,7 +111,7 @@ response = openai.ChatCompletion.create(
 )
 
 print(response.choices[0].message["content"])
-
+```
 
 ---
 
@@ -122,3 +122,18 @@ print(response.choices[0].message["content"])
 ```bash
 git clone 
 cd ai-shopping-agent
+```
+
+### 2. Create and Activate a Virtual Environment
+
+```bash
+python3 -m venv autogen_env
+source autogen_env/bin/activate  # On Windows: autogen_env\Scripts\activate
+```
+
+### 3. Install Dependencies
+```bash
+pip install -U autogen-agentchat autogen-ext[openai,web-surfer]
+playwright install
+```
+
