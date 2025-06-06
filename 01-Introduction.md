@@ -39,7 +39,7 @@ Some agents can use **tools** – code that help them perform specific actions s
 - Referencing earlier steps
 - Maintaining conversation history
 
-> 💡 This project basic doesn’t use memory — but you can add it later.
+> 💡 In this project, for simplicity we will not be using memory
 
 ---
 
