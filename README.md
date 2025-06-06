@@ -28,7 +28,7 @@ Download Here: https://nodejs.org/
 
 ### ⚙️ Azure OpenAI Setup Guide 
 
-This guide walks you through how to set up your Azure tenant, create an Azure OpenAI resource, deploy a GPT model (e.g GPT-4o), and retrieve your credentials for integration.
+This guide walks you through how to set up your Azure tenant, create an Azure OpenAI resource, deploy a GPT model, and retrieve your credentials for integration.
 
 ---
 
@@ -52,12 +52,12 @@ Before starting, ensure you have:
 - **Subscription**: Your active subscription  
 - **Resource Group**: Create or use an existing one (e.g. `hackathon-resource-group`)  
 - **Region**: Choose a region with GPT-4o (e.g. `UK South`)  
-- **Name**: Unique name like `openai-resource`  
+- **Name**: Unique name like `openai-123`  
 - **Pricing Tier**: `Standard S0`  
 
 ##### Network Settings:
 
-- Use **"All networks"** for public access (or configure private access later)
+- Use **"All networks"** for public access
 
 5. Click **"Review + Create"** → then **"Create"**
 
