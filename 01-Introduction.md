@@ -1,4 +1,4 @@
-#### 01 Introduction
+# 01 Introduction
 
 ### 🧠 How It Works
 
