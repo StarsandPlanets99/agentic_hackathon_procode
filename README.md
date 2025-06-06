@@ -124,20 +124,23 @@ git clone https://github.com/StarsandPlanets99/agentic_hackathon_procode.git
 cd agentic_hackathon_procode
 ```
 
-### 2. Create and Activate a Virtual Environment
+### 2. Create and Activate a Virtual Environment (Depending on your shell)
 
 ```bash
 python3 -m venv autogen_env
 ```
-On Linux:
-```bash#  
-source autogen_env/bin/activate  
+CMD (Windows):
+```bash  
+autogen_venv\Scripts\activate  
 ```
-On Windows:
+Powershell (Windows):
 ```bash 
-autogen_env\Scripts\activate
+.\autogen_env\Scripts\Activate.ps1
 ```
-
+Git Bash (Windows):
+```bash 
+source autogen_env/Scripts/activate
+```
 
 ### 3. Install Dependencies
 ```bash
