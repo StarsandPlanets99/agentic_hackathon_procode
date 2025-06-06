@@ -2,7 +2,7 @@
 
 This hackathon project demonstrates how to build an **agentic AI backend** using Microsoft's **AutoGen** framework. The AI agent uses the **WebSurfer** (Playwright-based) to browse the web in a visible browser window and perform tasks like **adding items to an online shopping basket**.
 
-----
+---
 
 ## 📌 Objectives
 
