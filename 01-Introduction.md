@@ -59,7 +59,7 @@ It uses a tool called **Playwright** under to control the browser, and GPT-4o to
 
 Agents don’t work alone, they’re grouped into **teams** that define how they interact. In AutoGen, teams are managed using **GroupChat types**.
 
-For this hackathon, we’re keeping it simple with `RoundRobinGroupChat` and using this type to alternate between:
+For this hackathon, we will keep it simple with `RoundRobinGroupChat` and using this type to alternate between:
 - The **WebSurfer**, who browses and clicks
 - The **UserProxy**, who gives instructions and ends the chat
 
