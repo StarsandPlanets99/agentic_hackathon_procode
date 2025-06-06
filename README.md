@@ -65,7 +65,7 @@ Ensure you have:
 
 #### Step 2: Deploy a Model
 
-1. Go to [Azure OpenAI Studio](https://oai.azure.com/)
+1. Go to [Azure AI Foundry](https://oai.azure.com/)
 2. Select your **subscription** and **resource**
 3. On the left sidebar, go to **Deployments**
 4. Click **"Create new deployment"**
