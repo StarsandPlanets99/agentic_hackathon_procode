@@ -120,16 +120,20 @@ print(response.choices[0].message["content"])
 ### 1. Clone the Repo
 
 ```bash
-git clone 
-cd ai-shopping-agent
+git clone https://github.com/StarsandPlanets99/agentic_hackathon_procode.git
+cd agentic_hackathon_procode
 ```
 
 ### 2. Create and Activate a Virtual Environment
 
 ```bash
 python3 -m venv autogen_env
-source autogen_env/bin/activate  # On Windows: autogen_env\Scripts\activate
 ```
+source autogen_env/bin/activate  
+```
+# On Windows: autogen_env\Scripts\activate
+```
+
 
 ### 3. Install Dependencies
 ```bash
