@@ -4,7 +4,7 @@ This hackathon project demonstrates how to build an **agentic AI backend** using
 
 ---
 
-## 📌 Project Objective
+## 📌 Objectives
 
 Use a GPT powered autonomous agent to:
 - Navigate an e-commerce site
@@ -155,47 +155,7 @@ OPENAI_API_VERSION=2024-12-01-preview
 
 ---
 
-## 🚀 Run the Agents
 
-Create a script called e.g shopping_agents.py and paste the following:
- #### edit this 
-```python
-#IMPORTS
-import asyncio
-from autogen_agentchat.agents import UserProxyAgent
-from autogen_agentchat.conditions import TextMentionTermination
-from autogen_agentchat.teams import RoundRobinGroupChat
-from autogen_agentchat.ui import Console
-from autogen_ext.models.openai import OpenAIChatCompletionClient
-from autogen_ext.agents.web_surfer import MultimodalWebSurfer
-```
-
-async def main():
-    model_client = OpenAIChatCompletionClient(model="gpt-4o")
-
-    web_surfer = MultimodalWebSurfer(
-        name="web_surfer",
-        model_client=model_client,
-        headless=False,           # Enables visible browser window
-        animate_actions=True
-    )
-
-    user_proxy = UserProxyAgent(name="user_proxy")
-
-    team = RoundRobinGroupChat(
-        agents=[web_surfer, user_proxy],
-        termination_condition=TextMentionTermination("exit", sources=["user_proxy"])
-    )
-
-    try:
-        await Console(team.run_stream(
-            task="Browse an e-commerce site and add a specific item to the shopping basket."
-        ))
-    finally:
-        await web_surfer.close()
-        await model_client.close()
-
-asyncio.run(main())
 
 ```
 EXTENSION TASKS:
