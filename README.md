@@ -2,7 +2,7 @@
 
 This hackathon project demonstrates how to build an **agentic AI backend** using Microsoft's **AutoGen** framework. The AI agent uses the **WebSurfer** (Playwright-based) to browse the web in a visible browser window and perform tasks like **adding items to an online shopping basket**.
 
----
+----
 
 ## 📌 Objectives
 
@@ -165,13 +165,3 @@ OPENAI_API_VERSION=2024-12-01-preview
 ```
 
 ---
-
-
-
-```
-EXTENSION TASKS:
-- explain teams
-- Use different types of teams
-- use assistant agents to create a multi agent system
-- task (add specific items to shopping basket)
-
