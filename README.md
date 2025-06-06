@@ -25,14 +25,14 @@ Required for Playwright browser automation
 Download Here: https://nodejs.org/
 
 ### ✅ Azure OpenAI API Key
-
+-----
 ### ⚙️ Azure OpenAI Setup Guide 
 
 This guide walks you through how to set up your Azure tenant, create an Azure OpenAI resource, deploy a GPT model, and retrieve your credentials for integration.
 
 ---
 
-Before starting, ensure you have:
+Ensure you have:
 
 - ✅ An Active **Azure Subscription**
 - ✅ Access to **Azure OpenAI Service** 
@@ -113,7 +113,7 @@ response = openai.ChatCompletion.create(
 print(response.choices[0].message["content"])
 ```
 
----
+-----
 
 ## ⚙️ Setup Instructions
 
