@@ -26,7 +26,7 @@ Download Here: https://nodejs.org/
 
 ### ✅ Azure OpenAI API Key
 
-# ⚙️ Azure OpenAI Setup Guide 
+### ⚙️ Azure OpenAI Setup Guide 
 
 This guide walks you through how to set up your Azure tenant, create an Azure OpenAI resource, deploy a GPT model (e.g GPT-4o), and retrieve your credentials for integration.
 
@@ -40,14 +40,14 @@ Before starting, ensure you have:
 
 ---
 
-## Step 1: Create an Azure OpenAI Resource
+#### Step 1: Create an Azure OpenAI Resource
 
 1. **Sign in** to [https://portal.azure.com](https://portal.azure.com)
 2. Click **"Create a resource"**
 3. Search for **"Azure OpenAI"** and select it
 4. Click **"Create"**
 
-### Fill in the following:
+##### Fill in the following:
 
 - **Subscription**: Your active subscription  
 - **Resource Group**: Create or use an existing one (e.g. `hackathon-resource-group`)  
@@ -55,7 +55,7 @@ Before starting, ensure you have:
 - **Name**: Unique name like `openai-resource`  
 - **Pricing Tier**: `Standard S0`  
 
-### Network Settings:
+##### Network Settings:
 
 - Use **"All networks"** for public access (or configure private access later)
 
@@ -63,14 +63,14 @@ Before starting, ensure you have:
 
 ---
 
-## Step 2: Deploy a Model
+#### Step 2: Deploy a Model
 
 1. Go to [Azure OpenAI Studio](https://oai.azure.com/)
 2. Select your **subscription** and **resource**
 3. On the left sidebar, go to **Deployments**
 4. Click **"Create new deployment"**
 
-### Configure the deployment:
+##### Configure the deployment:
 
 - **Model**: Choose `gpt-4o` (or other available models)
 - **Deployment name**: e.g. `gpt4o-deployment`
@@ -80,7 +80,7 @@ Before starting, ensure you have:
 
 ---
 
-## Step 3: Get API Keys and Endpoint
+#### Step 3: Get API Keys and Endpoint
 
 1. In the [Azure Portal](https://portal.azure.com), go to your **Azure OpenAI resource**
 2. Under **Keys and Endpoint**, you’ll find:
@@ -91,9 +91,9 @@ Before starting, ensure you have:
 
 ---
 
-## Step 4: Test the Deployment
+#### Step 4: Test the Deployment
 
-### Via Python
+##### Via Python
 
 ```python
 import openai
