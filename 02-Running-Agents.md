@@ -47,6 +47,8 @@ team = RoundRobinGroupChat(
 ```
 > Here, the termination condition is triggered when the UserProxyAgent receives the text "exit" as input. This ends the session when the user decides to stop.
 
+TBC.....
+```
     try:
         await Console(team.run_stream(
             task="Browse an e-commerce site and add a specific item to the shopping basket."
@@ -56,6 +58,9 @@ team = RoundRobinGroupChat(
         await model_client.close()
 
 asyncio.run(main())
+```
+
+
 
 ### 🧩 How It All Comes Together
 
@@ -69,6 +74,6 @@ Once you have configured your agents:
 
 ---
 
-Extension tasks:
+Extension tasks (TBC):
 - Create a custom agent and add to your group chat
 - Use another type of group chat
