@@ -129,9 +129,13 @@ cd agentic_hackathon_procode
 ```bash
 python3 -m venv autogen_env
 ```
+On Linux:
+```bash#  
 source autogen_env/bin/activate  
 ```
-# On Windows: autogen_env\Scripts\activate
+On Windows:
+```bash 
+autogen_env\Scripts\activate
 ```
 
 
