@@ -1,3 +1,5 @@
+#### 01 Introduction
+
 ### 🧠 How It Works
 
 This project uses **AutoGen**, a powerful open-source framework from Microsoft that lets multiple AI "agents" talk to each other and work together to solve complex tasks. Here's a breakdown of the main building blocks involved:
