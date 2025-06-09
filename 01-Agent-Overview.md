@@ -9,9 +9,9 @@ This project uses **AutoGen**, a powerful open-source framework from Microsoft t
 
 ### 🤖 What Are Agents?
 
-Think of **agents** like intelligent team members. Each one has a specific role.
+Think of **agents** as intelligent team members, each with a specific role. They are role-based components powered by LLMs (Large Language Models) that collaborate through natural language conversations. Agents can be equipped with **tools** (like web browsers) to perform actions, and optionally with **memory** to retain context across messages. AutoGen coordinates their interactions, enabling agents to delegate, respond, and adapt dynamically. This allows you to build flexible, multi-agent workflows that simulate real-world teamwork.
 
-In this project:
+In this project, we will focus initially on two types of AutoGen agents:
 
 - **WebSurfer Agent**: It can open real websites, click buttons, type in search boxes, and interact like a real user.
 - **UserProxy Agent**: Represents *you*. It acts as your voice in the system and lets you send or receive messages in the agent conversation.
