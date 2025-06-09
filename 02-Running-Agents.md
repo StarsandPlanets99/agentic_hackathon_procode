@@ -1,4 +1,4 @@
-## 🚀 Run the Agents
+## 🚀 Running Agents
 
 Create a script in the project root of your repository e.g ```shopping_agents.py``` and paste the following:
 
