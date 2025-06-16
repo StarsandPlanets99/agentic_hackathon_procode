@@ -58,23 +58,30 @@ team = RoundRobinGroupChat(
 ```
 > The team uses RoundRobinGroupChat to alternate turns between the agents. The session ends when the user_proxy agent receives the word "exit" from your terminal input.
 
-7. Define your stream logic:
+7. Define your main function with stream logic:
+```python
+async def main():
+    # Start the task and stream responses to the terminal
     stream = team.run_stream(
         task="Browse the e-commerce site https://www.currys.co.uk/ and add headphones to the shopping basket."
     )
+    
+    # The Console streams the agent interactions to your terminal live
     await Console(stream)
 
+    # Close connections after execution
     await web_surfer.close()
     await model_client.close()
 
+```
 Put this all inside a main function and run:
 ```python
 
-#run the main function
-
+8. Run the main function:
+```python
 if __name__ == "__main__":
     asyncio.run(main())
-    print("Shopping Complete ✅")
+    print("🛍️ Shopping Complete: ✅")
 ```
 
 ### 🧩 How It All Comes Together
@@ -82,7 +89,8 @@ if __name__ == "__main__":
 Once you have configured your agents, run your script in the terminal:
 
 A browser window should pop up, watch how the agent is naviagting the web on its own. You may see a red dot moving around and clicking on the webpage, like a human would!
-If you toggle between the web browser and the terminal you can see a break down of what the agents are doing:
+In the terminal, the Console class prints real-time updates of each agent's decisions and tool use, giving full observability into the task.
+If you toggle between the web browser and the terminal you can see a full break down of what the agents are doing:
 
 1. The **task instruction** tells the team what to do (e.g. “Go to an e-commerce site and add headphones to the cart”)
 2. The agents take turns thinking and acting
