@@ -91,7 +91,7 @@ Ensure you have:
 
 ---
 
-#### Step 4: Test the Deployment
+#### Step 4: Test the Deployment (Optional)
 
 ##### Via Python
 
