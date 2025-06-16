@@ -127,7 +127,7 @@ cd agentic_hackathon_procode
 ### 2. Create and Activate a Virtual Environment (Depending on your shell)
 
 ```bash
-python3 -m venv autogen_env
+python -m venv autogen_env
 ```
 CMD (Windows):
 ```bash  
