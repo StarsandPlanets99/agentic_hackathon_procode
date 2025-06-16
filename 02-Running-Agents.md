@@ -1,31 +1,42 @@
 ## 🚀 02 Running Agents
 
-Create a script in the project root of your repository e.g ```shopping_agents.py``` and paste the following:
+Create a script in the project root of your repository e.g ```shopping_agents.py``` and follow these steps:
 
-Add your imports:
+1. Add your imports:
 ```python
 import asyncio
 from autogen_agentchat.agents import UserProxyAgent
 from autogen_agentchat.conditions import TextMentionTermination
 from autogen_agentchat.teams import RoundRobinGroupChat
 from autogen_agentchat.ui import Console
-from autogen_ext.models.openai import OpenAIChatCompletionClient
+from autogen_ext.models.openai import AzureOpenAIChatCompletionClient
 from autogen_ext.agents.web_surfer import MultimodalWebSurfer
 ```
+2. Load your envrionment variables from your .env file:
+```python
+load_dotenv()
+```
+3. Create variables from your .env file:
 
-Define your model:
+```python
+api_key = os.getenv("AZURE_OPENAI_API_KEY")
+azure_endpoint = os.getenv("AZURE_OPENAI_ENDPOINT")
+api_version = os.getenv("AZURE_OPENAI_API_VERSION")
+```
+
+4. Define your model:
 ```python
 
-model_client = OpenAIChatCompletionClient(
+model_client = AzureOpenAIChatCompletionClient(
      model="gpt-4o",
      api_key=api_key,
-     api_base=api_base,
-     api_version=api_version,
-     api_type="azure"
+     azure_endpoint=azure_endpoint,
+     azure_deployment="gpt-4o",
+     api_version=api_version
 )
 ```
 
-Define your agents:
+5. Define your agents:
 ```python
 #Web Surfer Agent
 web_surfer = MultimodalWebSurfer(
@@ -38,29 +49,33 @@ web_surfer = MultimodalWebSurfer(
 #User Proxy Agent
 user_proxy = UserProxyAgent(name="user_proxy")
 ```
-Create your team with the Round Robin Group Chat and Termination condition:
+6. Create your team with the Round Robin Group Chat and set Termination condition:
 ```python
 team = RoundRobinGroupChat(
     agents=[web_surfer, user_proxy],
     termination_condition=TextMentionTermination("exit", sources=["user_proxy"])
 )
 ```
-> Here, the termination condition is triggered when the UserProxyAgent receives the text "exit" as input. This ends the session when the user decides to stop.
+> The team uses RoundRobinGroupChat to alternate turns between the agents. The session ends when the user_proxy agent receives the word "exit" from your terminal input.
 
-TBC.....
+7. Define your stream logic:
+    stream = team.run_stream(
+        task="Browse the e-commerce site https://www.currys.co.uk/ and add headphones to the shopping basket."
+    )
+    await Console(stream)
+
+    await web_surfer.close()
+    await model_client.close()
+
+Put this all inside a main function and run:
+```python
+
+#run the main function
+
+if __name__ == "__main__":
+    asyncio.run(main())
+    print("Shopping Complete ✅")
 ```
-    try:
-        await Console(team.run_stream(
-            task="Browse an e-commerce site and add a specific item to the shopping basket."
-        ))
-    finally:
-        await web_surfer.close()
-        await model_client.close()
-
-asyncio.run(main())
-```
-
-
 
 ### 🧩 How It All Comes Together
 
