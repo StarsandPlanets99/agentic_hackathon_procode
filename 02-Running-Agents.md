@@ -49,7 +49,7 @@ web_surfer = MultimodalWebSurfer(
 #User Proxy Agent
 user_proxy = UserProxyAgent(name="user_proxy")
 ```
-6. Create your team with the Round Robin Group Chat and set Termination condition:
+6. Create your team with the RoundRobinGroup Chat and set Termination condition:
 ```python
 team = RoundRobinGroupChat(
     agents=[web_surfer, user_proxy],
