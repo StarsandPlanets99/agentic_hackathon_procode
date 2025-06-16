@@ -154,9 +154,9 @@ playwright install
 Create a .env file (and .gitignore file) in the project root
 
 ```env
-OPENAI_API_KEY=your-api-key
+AZURE_OPENAI_API_KEY=your-api-key
 OPENAI_API_TYPE=azure
-OPENAI_API_BASE=https://your-resource-name.openai.azure.com/
+AZURE_OPENAI_ENDPOINT=https://your-resource-name.openai.azure.com/
 OPENAI_API_VERSION=2024-12-01-preview
 ```
 > ⚠️ **Add .env to your .gitignore file**. Do not commit it to GitHub:
