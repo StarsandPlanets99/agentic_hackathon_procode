@@ -115,12 +115,14 @@ If you toggle between the web browser and the terminal you can see a full break 
 
 These extra tasks help you explore AutoGen’s flexibility and push the limits of your web agent:
 
+
 💭 Task 1:
 - Did your agent manage to add items to the basket successfully?  
    If not, examine the terminal logs to understand what went wrong. Try:
   - Rephrasing the task more specifically (e.g "add the first item to the basket")
   - Asking the assistant to redirect to an alternative site
   - Adding intermediate steps (e.g “search first, then filter by price”)
+
 
 💭 Task 2:
 - Use the **UserProxyAgent** to interact mid-run:  
@@ -138,14 +140,17 @@ These extra tasks help you explore AutoGen’s flexibility and push the limits o
 
  > ⚠️ Don't forget to add any new agents you define to your group chat!
 
+
 💭 Task 4:
 - Try another group chat type like:
   - **SelectorGroupChat**: Automatically routes queries to the most relevant agent.
 
   You can read more about the different types of group chats here:
   🔗[AutoGen AgentChat Guide](https://microsoft.github.io/autogen/stable/user-guide/agentchat-user-guide/index.html)
-  > You will find **SelectorGroupChat** under the Advanced section along with other types of chat
+> You will find **SelectorGroupChat** under the Advanced section along with other types of chat
+
 ---
+
 Designing reliable multi-agent systems is a real-world engineering challenge. Coordination often breaks down so building effective agentic workflows is an iterative process of trial, observation, and refinement.
 
 Have fun exploring AutoGen! It’s a powerful platform for building smart, collaborative agents that can read, search, click, and reason across the web!🌐
