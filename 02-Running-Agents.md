@@ -127,20 +127,24 @@ These extra tasks help you explore AutoGen’s flexibility and push the limits o
   Type guidance, clarifications, or commands directly into the terminal - you’re part of the loop!
 <img width="550" alt="image" src="https://github.com/user-attachments/assets/9caa6aa4-93e4-44ad-afbd-9ac138b9739a" />
 
+
 💭 Task 3:
 - Create an additional custom **AssistantAgent** with a unique system message.  
   For example, add an AssistantAgent with this behavior:
-  > “Instruct the WebSurfer agent to try alternative product pages if a site returns no results.”
+  “Instruct the WebSurfer agent to try alternative product pages if a site returns no results.”
+  
   You can read more about the AssistantAgent and different types of other agents here:
-  🔗 AutoGen Agent Guide[https://microsoft.github.io/autogen/stable/user-guide/agentchat-user-guide/tutorial/agents.html]
+  🔗 [AutoGen Agent Guide](https://microsoft.github.io/autogen/stable/user-guide/agentchat-user-guide/tutorial/agents.html)
 
  > ⚠️ Don't forget to add any new agents you define to your group chat!
 
 💭 Task 4:
 - Try another group chat type like:
   - **SelectorGroupChat**: Automatically routes queries to the most relevant agent.
-  - **MagenticOne**: Builds structured, tool-enhanced workflows from agent capabilities.
 
+  You can read more about the different types of group chats here:
+  🔗[AutoGen AgentChat Guide](https://microsoft.github.io/autogen/stable/user-guide/agentchat-user-guide/index.html)
+  > You will find **SelectorGroupChat** under the Advanced section along with other types of chat
 ---
 Designing reliable multi-agent systems is a real-world engineering challenge. Coordination often breaks down so building effective agentic workflows is an iterative process of trial, observation, and refinement.
 
