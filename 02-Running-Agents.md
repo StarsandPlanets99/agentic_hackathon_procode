@@ -74,8 +74,6 @@ async def main():
     await model_client.close()
 
 ```
-Put this all inside a main function and run:
-```python
 
 8. Run the main function:
 ```python
@@ -88,7 +86,12 @@ if __name__ == "__main__":
 
 Once you have configured your agents, run your script in the terminal:
 
-A browser window should pop up, watch how the agent is naviagting the web on its own. You may see a red dot moving around and clicking on the webpage, like a human would!
+```python
+python shopping_agents.py
+```
+
+A browser window should pop up, watch how the agent is navigating the web on its own. This process is fully autonomous - you don’t need to interact with the browser. Just observe as the agent explores the page. You may see a red dot moving around and clicking around the webpage, like a human would!
+
 In the terminal, the Console class prints real-time updates of each agent's decisions and tool use, giving full observability into the task.
 If you toggle between the web browser and the terminal you can see a full break down of what the agents are doing:
 
@@ -112,25 +115,33 @@ If you toggle between the web browser and the terminal you can see a full break 
 
 These extra tasks help you explore AutoGen’s flexibility and push the limits of your web agent:
 
+💭 Task 1:
 - Did your agent manage to add items to the basket successfully?  
    If not, examine the terminal logs to understand what went wrong. Try:
-  - Rephrasing the task more specifically
+  - Rephrasing the task more specifically (e.g "add the first item to the basket")
   - Asking the assistant to redirect to an alternative site
-  - Adding intermediate steps (e.g., “search first, then filter by price”)
+  - Adding intermediate steps (e.g “search first, then filter by price”)
 
+💭 Task 2:
 - Use the **UserProxyAgent** to interact mid-run:  
   Type guidance, clarifications, or commands directly into the terminal - you’re part of the loop!
 <img width="550" alt="image" src="https://github.com/user-attachments/assets/9caa6aa4-93e4-44ad-afbd-9ac138b9739a" />
 
-- Create a **Custom Assistant Agent** with a unique system message.  
-  For example, add an agent with this behavior:
+💭 Task 3:
+- Create an additional custom **AssistantAgent** with a unique system message.  
+  For example, add an AssistantAgent with this behavior:
   > “Instruct the WebSurfer agent to try alternative product pages if a site returns no results.”
+  You can read more about the AssistantAgent and different types of other agents here:
+  🔗 AutoGen Agent Guide[https://microsoft.github.io/autogen/stable/user-guide/agentchat-user-guide/tutorial/agents.html]
 
-- 🔁 Try another group chat type like:
+ > ⚠️ Don't forget to add any new agents you define to your group chat!
+
+💭 Task 4:
+- Try another group chat type like:
   - **SelectorGroupChat**: Automatically routes queries to the most relevant agent.
   - **MagenticOne**: Builds structured, tool-enhanced workflows from agent capabilities.
 
 ---
 Designing reliable multi-agent systems is a real-world engineering challenge. Coordination often breaks down so building effective agentic workflows is an iterative process of trial, observation, and refinement.
 
-Have fun exploring AutoGen! It’s a powerful platform for building smart, collaborative agents that can read, search, click, and reason across the web!
+Have fun exploring AutoGen! It’s a powerful platform for building smart, collaborative agents that can read, search, click, and reason across the web!🌐
