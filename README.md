@@ -17,6 +17,10 @@ Use a GPT powered autonomous agent to:
 
 Before you begin, make sure you have the following installed:
 
+### ✅ IDE
+Please use an IDE of your choice (we recommend VScode)
+Download Here: https://code.visualstudio.com/
+
 ### ✅ Python 3.10 or later
 Download Here: https://www.python.org/downloads/
 
@@ -36,7 +40,7 @@ Ensure you have:
 
 - ✅ An Active **Azure Subscription**
 - ✅ Access to **Azure OpenAI Service** 
-- ✅ Azure Role Assignment: `Cognitive Services Contributor` or `Cognitive Services OpenAI Contributor` --- check this
+- ✅ Azure Role Assignment: `Cognitive Services Contributor` or `Cognitive Services OpenAI Contributor`
 
 ---
 
