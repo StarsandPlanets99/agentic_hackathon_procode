@@ -113,8 +113,6 @@ If you toggle between the web browser and the terminal you can see a full break 
 
 Designing reliable multi-agent systems is a real-world engineering challenge. Coordination often breaks down so building effective agentic workflows is an iterative process of trial, observation, and refinement.
 
-Have fun exploring AutoGen! It’s a powerful platform for building smart, collaborative agents that can read, search, click, and reason across the web!🌐
-
 ### 💡 Creative Challenges (Optional Tasks)
 
 These extra tasks help you explore AutoGen’s flexibility and push the limits of your web agent:
@@ -152,4 +150,6 @@ These extra tasks help you explore AutoGen’s flexibility and push the limits o
   You can read more about the different types of group chats here:
   🔗[AutoGen AgentChat Guide](https://microsoft.github.io/autogen/stable/user-guide/agentchat-user-guide/index.html)
 > You will find **SelectorGroupChat** under the Advanced section along with other types of chat
+
+Have fun exploring AutoGen! It’s a powerful platform for building smart, collaborative agents that can read, search, click, and reason across the web!🌐
 
