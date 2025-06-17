@@ -18,15 +18,16 @@ Use a GPT powered autonomous agent to:
 Before you begin, make sure you have the following installed:
 
 ### ✅ IDE
-Please use an IDE of your choice (we recommend VScode)
-Download Here: https://code.visualstudio.com/
+Please use an IDE of your choice - we recommend **VScode**
+🔗 Download Here: https://code.visualstudio.com/
 
 ### ✅ Python 3.10 or later
-Download Here: https://www.python.org/downloads/
+Required to run AutoGen scripts and dependencies
+🔗 Download Here: https://www.python.org/downloads/
 
 ### ✅ Node.js
 Required for Playwright browser automation  
-Download Here: https://nodejs.org/
+🔗 Download Here: https://nodejs.org/
 
 ### ✅ Azure OpenAI API Key
 ---
