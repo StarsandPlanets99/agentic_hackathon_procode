@@ -101,21 +101,43 @@ Ensure you have:
 ##### Via Python
 
 ```python
-import openai
+from openai import AzureOpenAI 
 
-openai.api_type = "azure"
-openai.api_base = "https://YOUR-RESOURCE-NAME.openai.azure.com/"
-openai.api_version = "2024-12-01-preview"
-openai.api_key = "YOUR-API-KEY"
+# Load Azure OpenAI settings from environment 
+api_key = "YOUR-AZURE_OPENAI_API_KEY" 
+azure_endpoint = "YOUR-AZURE_OPENAI_ENDPOINT" 
+api_version = "2024-12-01-preview" 
+model = "gpt-4o" 
 
-response = openai.ChatCompletion.create(
-    engine="YOUR-DEPLOYMENT-NAME",
-    messages=[
-        {"role": "user", "content": "Hello!"}
-    ]
-)
+model_client = AzureOpenAI( 
+    api_version=api_version, 
+    azure_endpoint=azure_endpoint, 
+    api_key=api_key, 
 
-print(response.choices[0].message["content"])
+) 
+
+
+response = model_client.chat.completions.create( 
+    messages=[ 
+        { 
+            "role": "system", 
+            "content": "You are a helpful assistant.", 
+        }, 
+
+        { 
+            "role": "user", 
+            "content": "Hello!", 
+        } 
+    ], 
+
+    max_tokens=4096, 
+    temperature=1.0, 
+    top_p=1.0, 
+    model=model 
+) 
+
+print(response.choices[0].message.content) 
+
 ```
 
 -----
