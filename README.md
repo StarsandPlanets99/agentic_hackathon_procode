@@ -29,6 +29,10 @@ Required to run AutoGen scripts and dependencies
 Required for Playwright browser automation
 🔗 Download Here: https://nodejs.org/
 
+### ✅ Git
+For version control and lab access
+🔗 Download Here: https://git-scm.com/downloads
+
 ### ✅ Azure OpenAI API Key
 ---
 ### ⚙️ Azure OpenAI Setup Guide 
@@ -78,7 +82,7 @@ Ensure you have:
 ##### Configure the deployment:
 
 - **Model**: Choose `gpt-4o` (or other available models)
-- **Deployment name**: e.g. `gpt4o`
+- **Deployment name**: e.g. `gpt-4o`
 - **Deployment type**: Use `Standard` for most cases
 
 5. Click **"Create"**
