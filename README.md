@@ -26,7 +26,7 @@ Required to run AutoGen scripts and dependencies
 🔗 Download Here: https://www.python.org/downloads/
 
 ### ✅ Node.js
-Required for Playwright browser automation  
+Required for Playwright browser automation
 🔗 Download Here: https://nodejs.org/
 
 ### ✅ Azure OpenAI API Key
