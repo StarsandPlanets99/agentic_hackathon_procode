@@ -175,7 +175,7 @@ source autogen_env/Scripts/activate
 
 ### 3. Install Dependencies
 ```bash
-pip install -U autogen-agentchat autogen-ext[openai,web-surfer]
+pip install -U autogen-agentchat autogen-ext[openai,web-surfer] dotenv
 playwright install
 ```
 >💡 playwright is required to download browser binaries
