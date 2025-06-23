@@ -78,7 +78,7 @@ Ensure you have:
 ##### Configure the deployment:
 
 - **Model**: Choose `gpt-4o` (or other available models)
-- **Deployment name**: e.g. `gpt4o-deployment`
+- **Deployment name**: e.g. `gpt4o`
 - **Deployment type**: Use `Standard` for most cases
 
 5. Click **"Create"**
