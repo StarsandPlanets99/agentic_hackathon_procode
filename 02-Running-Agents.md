@@ -134,9 +134,11 @@ These extra tasks help you explore AutoGen’s flexibility and push the limits o
 
 
 💭 Task 3:
-- Create an additional custom **AssistantAgent** with a unique system message.  
+- Create an additional custom **AssistantAgent** with a unique system message.
   For example, add an AssistantAgent with this behavior:
   “Instruct the WebSurfer agent to try alternative product pages if a site returns no results.”
+
+  Try replacing the UserProxyAgent entirely with your custom AssistantAgent, to enable a more autonomous experience.
   
   You can read more about the AssistantAgent and different types of other agents here:
   🔗 [AutoGen Agent Guide](https://microsoft.github.io/autogen/stable/user-guide/agentchat-user-guide/tutorial/agents.html)
