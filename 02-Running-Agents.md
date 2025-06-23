@@ -6,6 +6,7 @@ Create a script in the project root of your repository e.g ```shopping_agents.py
 ```python
 import asyncio
 import os
+from dotenv import load_dotenv
 from autogen_agentchat.agents import UserProxyAgent
 from autogen_agentchat.conditions import TextMentionTermination
 from autogen_agentchat.teams import RoundRobinGroupChat
