@@ -5,6 +5,7 @@ Create a script in the project root of your repository e.g ```shopping_agents.py
 1. Add your imports:
 ```python
 import asyncio
+import os
 from autogen_agentchat.agents import UserProxyAgent
 from autogen_agentchat.conditions import TextMentionTermination
 from autogen_agentchat.teams import RoundRobinGroupChat
