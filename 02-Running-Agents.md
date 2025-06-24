@@ -115,7 +115,7 @@ If you toggle between the web browser and the terminal you can see a full break 
 
 Designing reliable multi-agent systems is a real-world engineering challenge. Coordination often breaks down so building effective agentic workflows is an iterative process of trial, observation, and refinement.
 
-### 💡 Creative Challenges (Optional Tasks)
+### 💡 Creative Challenges
 
 These extra tasks help you explore AutoGen’s flexibility and push the limits of your web agent:
 
