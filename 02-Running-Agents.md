@@ -151,6 +151,7 @@ These extra tasks help you explore AutoGen’s flexibility and push the limits o
   🔗 [AutoGen Agent Guide](https://microsoft.github.io/autogen/stable/user-guide/agentchat-user-guide/tutorial/agents.html)
 
  > ⚠️ Don't forget to add any new agents you define to your group chat!
+> 
  > ⚠️ Don't forget to update your termination condition (or comment it out) if you are no longer using the UserProxyAgent for termination.
 
 
