@@ -126,7 +126,13 @@ These extra tasks help you explore AutoGen’s flexibility and push the limits o
   - Rephrasing the task more specifically (e.g "add the first item to the basket")
   - Asking the assistant to redirect to an alternative site
   - Adding intermediate steps (e.g “search first, then filter by price”)
-
+ 
+    For example:
+    ```python
+      stream = team.run_stream(
+        task="Browse the e-commerce site https://www.amazon.co.uk/ and add headphones to the shopping basket. Add the first item to the basket."
+    )
+    ```
 
 💭 Task 2:
 - Use the **UserProxyAgent** to interact mid-run:  
@@ -135,7 +141,7 @@ These extra tasks help you explore AutoGen’s flexibility and push the limits o
 
 
 💭 Task 3:
-- Create an additional custom **AssistantAgent** with a unique system message.
+- Create an additional custom **AssistantAgent** with a unique **system message**.
   For example, add an AssistantAgent with this behavior:
   “Instruct the WebSurfer agent to try alternative product pages if a site returns no results.”
 
@@ -145,6 +151,7 @@ These extra tasks help you explore AutoGen’s flexibility and push the limits o
   🔗 [AutoGen Agent Guide](https://microsoft.github.io/autogen/stable/user-guide/agentchat-user-guide/tutorial/agents.html)
 
  > ⚠️ Don't forget to add any new agents you define to your group chat!
+ > ⚠️ Don't forget to update your termination condition (or comment it out) if you are no longer using the UserProxyAgent for termination.
 
 
 💭 Task 4:
