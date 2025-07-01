@@ -6,10 +6,20 @@ This hackathon project demonstrates how to build an **agentic AI backend** using
 
 ## 📌 Objectives
 
-Use a GPT powered autonomous agent to:
+### 1.Complete the Lab Exercise
+Use a GPT-powered autonomous agent to:
 - Navigate an e-commerce site
 - Search for specific items
 - Add selected items to the shopping basket
+
+### 2.Team Challenge: Apply It to a Real-World Scenario
+Work in a team to build a useful real-life solution based on the same agent setup and skills learned in the lab. Think of a real use case that solves a specific need, adds value, or simplifies a repetitive shopping task.
+
+**💡 Example idea to get started:**
+#### Smart Gift-Buyer Agent
+- Your team can build an agent that helps users find the perfect gift by asking for the occasion, recipient type (e.g. "dad", "teenage friend"), budget, and interests. The agent then browses online stores to find suitable options and adds them to the basket, ready for checkout.
+
+
 
 ---
 
